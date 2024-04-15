@@ -4,7 +4,7 @@ Ce projet contient une configuration Docker-compose pour exécuter une stack com
 
 L'objectif de ce projet est d'extraire des données à partir d'un site web et de les afficher de manière interactive sur un tableau de bord.
 
-# Blocs de données affichées sur le tableau de bord
+## Blocs de données affichées sur le tableau de bord
 - Nombre de livres dans chaque catégorie :
 Affiche le nombre total de livres dans chaque catégorie.
 
@@ -46,6 +46,3 @@ Le service Dash héberge un tableau de bord interactif permettant de visualiser 
 
    ```bash
    docker compose up --build
-
-
-
