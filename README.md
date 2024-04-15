@@ -26,7 +26,6 @@ Ces blocs de données fournissent des informations clés sur les livres disponib
 Le service MongoDB est utilisé comme base de données pour stocker les données extraites par le script de scraping.
 
 - Port exposé : `27017`
-- Volume : `mongodb_data:/data/db`
 
 ### Scrapping
 
@@ -47,3 +46,6 @@ Le service Dash héberge un tableau de bord interactif permettant de visualiser 
 
    ```bash
    docker compose up --build
+
+
+
