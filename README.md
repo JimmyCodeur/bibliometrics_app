@@ -5,16 +5,16 @@ Ce projet contient une configuration Docker-compose pour exécuter une stack com
 L'objectif de ce projet est d'extraire des données à partir d'un site web et de les afficher de manière interactive sur un tableau de bord.
 
 # Blocs de données affichées sur le tableau de bord
-- Nombre de livres dans chaque catégorie
+- Nombre de livres dans chaque catégorie :
 Affiche le nombre total de livres dans chaque catégorie.
 
-- Note moyenne pour chaque catégorie
+- Note moyenne pour chaque catégorie :
 Affiche la note moyenne attribuée aux livres dans chaque catégorie.
 
-- Liste des livres avec plus de 10 exemplaires disponibles
+- Liste des livres avec plus de 10 exemplaires disponibles :
 Affiche une liste des livres pour lesquels plus de 10 exemplaires sont disponibles, avec leur titre, leur catégorie, leur prix et leur note.
 
-- Liste des livres avec une note de 5 étoiles
+- Liste des livres avec une note de 5 étoiles :
 Affiche une liste des livres qui ont reçu une note de 5 étoiles, avec leur titre, leur catégorie et leur note.
 
 Ces blocs de données fournissent des informations clés sur les livres disponibles et leurs évaluations, facilitant ainsi leur analyse.
