@@ -5,19 +5,28 @@ Ce projet contient une configuration Docker-compose pour exécuter une stack com
 L'objectif de ce projet est d'extraire des données à partir d'un site web et de les afficher de manière interactive sur un tableau de bord.
 
 ## Blocs de données affichées sur le tableau de bord
-- Nombre de livres dans chaque catégorie :
+- Number of books in each category :
 Affiche le nombre total de livres dans chaque catégorie.
 
-- Note moyenne pour chaque catégorie :
+- Average rating for each category :
 Affiche la note moyenne attribuée aux livres dans chaque catégorie.
 
-- Liste des livres avec plus de 10 exemplaires disponibles :
+- List of books with more than 10 available :
 Affiche une liste des livres pour lesquels plus de 10 exemplaires sont disponibles, avec leur titre, leur catégorie, leur prix et leur note.
 
-- Liste des livres avec une note de 5 étoiles :
+- Random Book Generator : Livre généré aléatoirement.
+
+- List of books with a 5 stars rating :
 Affiche une liste des livres qui ont reçu une note de 5 étoiles, avec leur titre, leur catégorie et leur note.
 
-Ces blocs de données fournissent des informations clés sur les livres disponibles et leurs évaluations, facilitant ainsi leur analyse.
+- 10 best priced books with 5 stars rating :
+Affiche les 10 meilleurs livres avec 5 étoiles.
+
+- Books count per rating :
+Poucentage des livres en fonction des notes.
+
+- Search in title :
+Barre de recherche d'un livre.
 
 ## Configuration des services
 
