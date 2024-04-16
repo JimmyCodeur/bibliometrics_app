@@ -55,3 +55,5 @@ Le service Dash héberge un tableau de bord interactif permettant de visualiser 
 
    ```bash
    docker compose up --build
+5. Voir l'application à l'adresse : "http://localhost:8050/"
+
