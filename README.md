@@ -1,59 +1,57 @@
-# Projet Bibliometrics avec MongoDB, Scrapy et Dash
+# Bibliometrics Project with MongoDB, Scrapy, and Dash
 
-Ce projet contient une configuration Docker-compose pour exécuter une stack comprenant MongoDB, un script de scraping avec Scrapy et un tableau de bord interactif avec Dash.
+This project includes a Docker-compose configuration to run a stack comprising MongoDB, a scraping script with Scrapy, and an interactive dashboard with Dash.
 
-L'objectif de ce projet est d'extraire des données à partir d'un site web et de les afficher de manière interactive sur un tableau de bord.
+The goal of this project is to extract data from a website and display it interactively on a dashboard.
 
-## Blocs de données affichées sur le tableau de bord
-- Number of books in each category :
-Affiche le nombre total de livres dans chaque catégorie.
+## Data Blocks Displayed on the Dashboard
+- Number of books in each category: Displays the total number of books in each category.
 
-- Average rating for each category :
-Affiche la note moyenne attribuée aux livres dans chaque catégorie.
+- Average rating for each category: Displays a list of books with more than 10 copies available, showing their title, category, price, and rating.
 
 - List of books with more than 10 available :
 Affiche une liste des livres pour lesquels plus de 10 exemplaires sont disponibles, avec leur titre, leur catégorie, leur prix et leur note.
 
-- Random Book Generator : Livre généré aléatoirement.
+- Random Book Generator : Randomly generated book.
 
 - List of books with a 5 stars rating :
-Affiche une liste des livres qui ont reçu une note de 5 étoiles, avec leur titre, leur catégorie et leur note.
+Displays a list of books that have received a 5-star rating, showing their title, category, and rating.
 
 - 10 best priced books with 5 stars rating :
-Affiche les 10 meilleurs livres avec 5 étoiles.
+Displays the 10 best-priced books with 5 stars.
 
 - Books count per rating :
-Poucentage des livres en fonction des notes.
+Percentage of books based on their ratings.
 
 - Search in title :
-Barre de recherche d'un livre.
+Search bar for looking up a book by its title.
 
-## Configuration des services
+## Service Configuration
 
 ### MongoDB
 
-Le service MongoDB est utilisé comme base de données pour stocker les données extraites par le script de scraping.
+The MongoDB service is used as a database to store the data extracted by the scraping script.
 
-- Port exposé : `27017`
+- Exposed Port : `27017`
 
 ### Scrapping
 
-Le service de scraping utilise Scrapy pour extraire des données à partir du site web "https://books.toscrape.com/" et les stocker dans MongoDB.
+The scraping service uses Scrapy to extract data from the website "https://books.toscrape.com/" and store it in MongoDB.
 
 ### Dash
 
-Le service Dash héberge un tableau de bord interactif permettant de visualiser et d'analyser les données extraites.
+The Dash service hosts an interactive dashboard for visualizing and analyzing the extracted data.
 
-- Port exposé : `8050`
+- Exposed Port : `8050`
 
-## Utilisation
+## Usage
 
-1. Assurez-vous que Docker et Docker-compose sont installés sur votre système.
-2. Clonez ce dépôt sur votre machine locale.
-3. Naviguez jusqu'au répertoire du projet.
-4. Exécutez la commande suivante pour démarrer les services à la racine du projet:
+1. Ensure Docker and Docker-compose are installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory.
+4. Run the following command from the project root to start the services:
 
    ```bash
    docker compose up --build
-5. Voir l'application à l'adresse : "http://localhost:8050/"
+5. View the application at: "http://localhost:8050/"
 
