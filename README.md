@@ -1,3 +1,5 @@
+![Tableau de bord principal](assets/dashboard_main.png)
+
 # Bibliometrics Project with MongoDB, Scrapy, and Dash
 
 This project includes a Docker-compose configuration to run a stack comprising MongoDB, a scraping script with Scrapy, and an interactive dashboard with Dash.
