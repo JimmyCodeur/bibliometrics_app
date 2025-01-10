@@ -1,4 +1,4 @@
-![Tableau de bord principal](assets/dashboard_main.png)
+![Tableau de bord principal](assets/dashboard.png)
 
 # Bibliometrics Project with MongoDB, Scrapy, and Dash
 
